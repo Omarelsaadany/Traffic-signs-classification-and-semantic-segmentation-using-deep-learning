@@ -91,6 +91,11 @@ Now, we'll use the testing set to measure the accuracy of the model over unknown
 ##  Step 6.1: Extract the signs traffic objects.
 
 find the contours and draw a rectangular boundary to extract them.
+![download](https://user-images.githubusercontent.com/65299336/110251244-fa30ac00-7f7f-11eb-852c-df2f685eb6e2.png)
+
+This is the result:
+![pasted image 0](https://user-images.githubusercontent.com/65299336/110251315-3a902a00-7f80-11eb-9f08-bceb1fbb3117.png)
+
 
 
 ## Step 1.2: Load The Data(classification)
@@ -117,14 +122,24 @@ Dataset Folder should only have folders of each class. Dataloader will automatic
 
 ## Step 3.2: Data Preprocessing
 
+
 In this step, we will apply several preprocessing steps to the input images to achieve the best possible results.
 
 **We will use the following preprocessing techniques:**
 1. Resizing.
-2. Cropping.
+   image_size: 128*128
+3. Cropping.
+   We used the coordinates in the CSV file to crop the image 
 
+Image Before processing:
 
+![unnamed](https://user-images.githubusercontent.com/65299336/110251366-6ca18c00-7f80-11eb-854e-346f8bf7eeb9.jpg)
+
+Image After processing:
+
+![00002 ppm00002_00018](https://user-images.githubusercontent.com/65299336/110251403-8e027800-7f80-11eb-94b1-07edf9212109.jpg)
 ---
+
 
 ## Step 3.2: Design a Model Architecture(classification)
 
@@ -133,6 +148,7 @@ In this step, we will use a deep learning model that learns to recognize traffic
 We'll use ResNet-50 that described in the paper "Deep Residual Learning for Image Recognition" (http://arxiv.org/abs/1512.03385). to classify the images in this dataset. 
 
 
+![3-TableII-1 (1)](https://user-images.githubusercontent.com/65299336/110251438-b5f1db80-7f80-11eb-853c-8ce32e9901c8.png)
 
 
 
@@ -147,6 +163,14 @@ In this step, we will train our model using `normalized_images`, then we'll comp
 ## Step 5.2: Testing the Model using the Test Set
 
 Now, we'll use the testing set to measure the accuracy of the model over unknown examples.
+At the end we got classified image with the percentage of the prediction.
+
+![unnamed (1)](https://user-images.githubusercontent.com/65299336/110251544-3adcf500-7f81-11eb-8e96-d00652015635.png)
+
+## Accuracy and Confusion Matrix
+Accuracy: 95%
+
+![Figfure_1](https://user-images.githubusercontent.com/65299336/110251592-7a0b4600-7f81-11eb-9e83-2187c36cd4cb.png)
 
 ---
 
