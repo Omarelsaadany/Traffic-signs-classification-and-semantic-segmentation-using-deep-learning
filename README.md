@@ -81,7 +81,10 @@ where the goal is to assign semantic labels to every pixel in the input image.
 
 Now, we'll use the testing set to measure the accuracy of the model over unknown examples.
 
-## Sample of the dataset
+## Sample of the Result
+
+![unnamed](https://user-images.githubusercontent.com/65299336/110251153-81c9eb00-7f7f-11eb-8f73-7f6c347b4b9e.png)
+
 
 ---
 
