@@ -172,9 +172,4 @@ Accuracy: 95%
 
 ![Figfure_1](https://user-images.githubusercontent.com/65299336/110251592-7a0b4600-7f81-11eb-9e83-2187c36cd4cb.png)
 
----
-
-## Conclusion
-
-To sum up our project has two steps, first we have the image of the street which has a lot of objects beside the traffic signs so we used the semantic segmentation to identify all objects in the image then we extracted only the traffic signs.After that, the second step job is to classify the extracted traffic signs to 43 classes we trained the model on but we faced a problem because some of extracted signs are not in 43 classes we have so we added
 
