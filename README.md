@@ -34,7 +34,7 @@ For segmentation [Cityscapes Dataset](https://www.cityscapes-dataset.com/).
     - Resizing.
     - Cropping.
     
-- **Design a Model Architecture.**
+- **Model Architecture.**
     - Resnet50
 - **Model Training and Evaluation.**
 
