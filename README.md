@@ -172,4 +172,10 @@ Accuracy: 95%
 
 ![Figfure_1](https://user-images.githubusercontent.com/65299336/110251592-7a0b4600-7f81-11eb-9e83-2187c36cd4cb.png)
 
+## Error Analysis And Conclusion 
+To sum up, our project has two steps, first, we have the image of the street which has a lot of objects beside the traffic signs so we used semantic segmentation to identify all objects in the image then we extracted only the traffic signs. After that, the second step is to classify the extracted traffic signs to 43 classes we trained the model on, but we faced a problem because some of the extracted signs are not in the 43 classes we have so we added a new class. Class 44 is called an undefined class that contains the traffic signs which not included in the 43 plus any other image that not a traffic sign such as street names. After testing our model using the 44 classes We notice that most of the traffic signs including the 43 classes are classified correctly with high accuracy but for the undefine class the accuracy was very low, the reason behind the low accuracy in our opinion is we do not have enough dataset to train our model for the undefined class.
+The next step would be to collect more images of the undefined traffic signs and train again the model.
+ 
+ 
+ ![pasted image 0](https://user-images.githubusercontent.com/65299336/111041112-f648d200-8436-11eb-86eb-0f7ae3c2b3c5.png)
 
